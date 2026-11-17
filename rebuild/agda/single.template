@@ -1,0 +1,45 @@
+{-# OPTIONS --safe --without-K #-}
+module Locking.CompileISCAS where
+open import Data.Nat using (ℕ)
+open import Data.Bool using (Bool; true; false; not; _∧_; _∨_)
+open import Data.Fin using (Fin; #_; toℕ)
+import Data.Fin as F
+open import Data.Vec using (Vec; []; _∷_; lookup)
+open import Relation.Binary.PropositionalEquality using (_≡_; refl)
+open import Circuit.Core using
+  (Circuit; Id; Not1; And2; Or2; Seq; Par; Plug)
+open import Circuit.Semantics using (⟦_⟧)
+open import SFLL.HammingDistance using (HD; parity)
+open import SFLL.HD using (locked)
+open import Locking.CertifiedCompiler using (compileSFLL; CompiledLock)
+open import Locking.NetlistToCircuit using
+  (Gate; gate; Netlist; []; _∷_; importCone; importConeF; import-correct)
+open import SFLL.EfficientLock using (locked-circuit-eff; locked-circuit-eff-correct)
+
+$host
+
+c17C-denotes : (x : Vec Bool 4) → ⟦ c17C ⟧ x ≡ c17f x ∷ []
+c17C-denotes (x0 ∷ x1 ∷ x2 ∷ x3 ∷ []) = refl
+ksec kapp : Vec Bool 4
+ksec = false ∷ false ∷ false ∷ false ∷ []
+kapp = true  ∷ false ∷ false ∷ false ∷ []
+odd : parity (HD ksec kapp) ≡ true
+odd = refl
+c17-locked : CompiledLock 2 ksec kapp c17f
+c17-locked = compileSFLL c17C c17f c17C-denotes 2 ksec kapp odd
+
+c17nl-is-c17f : (x : Vec Bool 4) → importConeF c17nl x ≡ c17f x
+c17nl-is-c17f (x0 ∷ x1 ∷ x2 ∷ x3 ∷ []) = refl
+c17-locked-via-importer : CompiledLock 2 ksec kapp (importConeF c17nl)
+c17-locked-via-importer =
+  compileSFLL (importCone c17nl) (importConeF c17nl) (import-correct c17nl)
+              2 ksec kapp odd
+hF : Fin 5
+hF = # 2
+c17-eff-locked-correct :
+  (x : Vec Bool 4) →
+  ⟦ locked-circuit-eff (importCone c17nl) hF ksec kapp ⟧ x
+  ≡ locked (toℕ hF) ksec kapp (importConeF c17nl) x ∷ []
+c17-eff-locked-correct =
+  locked-circuit-eff-correct (importCone c17nl) (importConeF c17nl)
+    (import-correct c17nl) hF ksec kapp

@@ -1,0 +1,16 @@
+attack	n	typed_budget	execution_state	verdict	reported_budget	observed_queries	query_source	match	reason
+FALL	4	5	EXECUTED	PASS	5	NA	formula	1	NA
+DIP	4	16	EXECUTED	PASS	16	NA	formula	1	NA
+CycSAT	4	16	EXECUTED	PASS	16	NA	formula	1	NA
+FALL	8	9	EXECUTED	PASS	9	NA	formula	1	NA
+DIP	8	256	EXECUTED	PASS	256	NA	formula	1	NA
+CycSAT	8	256	EXECUTED	PASS	256	NA	formula	1	NA
+FALL	12	13	EXECUTED	PASS	13	NA	formula	1	NA
+DIP	12	4096	EXECUTED	PASS	4096	NA	formula	1	NA
+CycSAT	12	4096	EXECUTED	PASS	4096	NA	formula	1	NA
+FALL	16	17	EXECUTED	PASS	17	NA	formula	1	NA
+DIP	16	65536	FORMULA	NA	NA	NA	formula	NA	execution cutoff
+CycSAT	16	65536	EXECUTED	PASS	65536	NA	formula	1	NA
+FALL	20	21	EXECUTED	PASS	21	NA	formula	1	NA
+DIP	20	1048576	FORMULA	NA	NA	NA	formula	NA	execution cutoff
+CycSAT	20	1048576	FORMULA	NA	NA	NA	formula	NA	execution cutoff

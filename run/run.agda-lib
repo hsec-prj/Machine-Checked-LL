@@ -1,0 +1,8 @@
+-- Executable library: IO/FFI uses guardedness outside the safe proof roots.
+-- Verified definitions are checked separately by src/Everything.agda.
+-- From this directory: agda --compile --compile-dir=_bin Main.agda
+-- Example: ./_bin/Main dipminus 6 0 5
+name: run
+include: . ../src
+depend: standard-library-2.3
+flags: --guardedness --without-K

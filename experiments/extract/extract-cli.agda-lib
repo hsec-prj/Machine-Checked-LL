@@ -1,0 +1,6 @@
+-- Executable front-end over this archive's verified sources.
+-- The IO/FFI layer is checked separately from the --safe proof roots.
+name: extract-cli
+include: . ../../src
+depend: standard-library-2.3
+flags: --guardedness --without-K

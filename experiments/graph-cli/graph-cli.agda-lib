@@ -1,0 +1,4 @@
+name: graph-cli
+include: . ../../src/graph
+depend: standard-library-2.3
+flags: --guardedness --without-K

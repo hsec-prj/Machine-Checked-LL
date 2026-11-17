@@ -1,0 +1,387 @@
+{
+  "18236a230f1bb3b4c37a0bbdbd8dbb2af50af3abefc22efb0518d28ddd589e15": {
+    "host-constant": {
+      "edits": [
+        [
+          390,
+          "prepend-test-constant"
+        ]
+      ],
+      "sha256": "b1818d5352d43aeb520e8ee13150b5aa7d2159940610283229648fe54e9f83fb"
+    },
+    "polarity-flip": {
+      "edits": [
+        [
+          1326,
+          "toggle-constant",
+          1
+        ]
+      ],
+      "sha256": "d21ec8dc7b2a4aabf5132f00070a197380eb73ef78e26d3341e302fc41fe55f9"
+    },
+    "rail-delete": {
+      "edits": [
+        [
+          1520,
+          "increment-ordinal",
+          3
+        ],
+        [
+          1326,
+          "omit-record"
+        ]
+      ],
+      "sha256": "c6f6e58ebef26660cafc308185da1fc9b9f92c7cd3a03ea091bfab118a316050"
+    }
+  },
+  "24b18de63900bd23f4467135c512ba1aab2bc0548c61b5d83850f982fca5a039": {
+    "host-constant": {
+      "edits": [
+        [
+          66,
+          "prepend-test-constant"
+        ]
+      ],
+      "sha256": "70bbdf82bbb0b4203c0048ece80c1d6a26f778ebd6e1e686aef1307d781cbc2b"
+    },
+    "polarity-flip": {
+      "edits": [
+        [
+          1169,
+          "toggle-constant",
+          1
+        ]
+      ],
+      "sha256": "8058f311933281b86820bb7441d2cb915ea68eafee7fd28001ce3cdddfc1454f"
+    },
+    "rail-delete": {
+      "edits": [
+        [
+          1201,
+          "increment-ordinal",
+          3
+        ],
+        [
+          1169,
+          "omit-record"
+        ]
+      ],
+      "sha256": "42187a6d44a58da24e14fba84585f8596e38833df1fff81b11afb7d505435f95"
+    }
+  },
+  "25be8428fba62a9182bd8f3affeb15b9fdc8eedc1a711c337c7f9a3110a8c7e5": {
+    "host-constant": {
+      "edits": [
+        [
+          68,
+          "prepend-test-constant"
+        ]
+      ],
+      "sha256": "ad4ec7ac1eaafbfb93b4b036fb16130b650af5f2dcb306751384c0c2e45167b6"
+    },
+    "polarity-flip": {
+      "edits": [
+        [
+          382,
+          "toggle-constant",
+          1
+        ]
+      ],
+      "sha256": "51a6db95ea413c1854b7a79663f08fe8c3425aaea564721b08047599eeda1627"
+    },
+    "rail-delete": {
+      "edits": [
+        [
+          415,
+          "increment-ordinal",
+          3
+        ],
+        [
+          382,
+          "omit-record"
+        ]
+      ],
+      "sha256": "1464b0214a664c9d93bffb56487eb99ce892d4b233a02976faca2ae39eef0228"
+    }
+  },
+  "2b5d7ff593998bc957c9f6918c073a5059c8709bdbe24383f8c301909223d22e": {
+    "host-constant": {
+      "edits": [
+        [
+          84,
+          "prepend-test-constant"
+        ]
+      ],
+      "sha256": "920b1cd127fa924e088ed023ff2f3949cdc7fa1ecf48c022a106fc0b99b0cf3d"
+    },
+    "polarity-flip": {
+      "edits": [
+        [
+          199,
+          "toggle-constant",
+          1
+        ]
+      ],
+      "sha256": "d6f1b57f7f0bce6062941a00bff3e04cf819caecea34795885f395978bdc3842"
+    },
+    "rail-delete": {
+      "edits": [
+        [
+          240,
+          "increment-ordinal",
+          3
+        ],
+        [
+          199,
+          "omit-record"
+        ]
+      ],
+      "sha256": "b0dea45c6ad3cf0b5bdff6d0398cad5cccac98e8f21c0de91d15f22e29b9856c"
+    }
+  },
+  "5aa36356d05a834fdd20aa291708aa09f4f47695bbcfb04eddea7276d61398a6": {
+    "host-constant": {
+      "edits": [
+        [
+          102,
+          "prepend-test-constant"
+        ]
+      ],
+      "sha256": "a01400f8a9be7523c03210473b78674495565b9d0d9babdfd98b6df2bddc670f"
+    },
+    "polarity-flip": {
+      "edits": [
+        [
+          1518,
+          "toggle-constant",
+          1
+        ]
+      ],
+      "sha256": "042d57e403894fd2ef1c477d723ab3d9789852db1d6a63d6f0a18c3b4fe9d854"
+    },
+    "rail-delete": {
+      "edits": [
+        [
+          1568,
+          "increment-ordinal",
+          3
+        ],
+        [
+          1518,
+          "omit-record"
+        ]
+      ],
+      "sha256": "30ea23f75897729b0d521ef50046510a6b47fc6cf721f951601ce171698bd8ab"
+    }
+  },
+  "5cdeeb5fdcf25660bc56dcfa092af03c6a2a7b8e6f74e47360bfb5acad78c4ca": {
+    "host-constant": {
+      "edits": [
+        [
+          136,
+          "prepend-test-constant"
+        ]
+      ],
+      "sha256": "1738ac23b1adcee3e21d779680343faef31ca9d37b818206102a3483859c4d8c"
+    },
+    "polarity-flip": {
+      "edits": [
+        [
+          455,
+          "toggle-constant",
+          1
+        ]
+      ],
+      "sha256": "c716cabda22fd3ad219d89aa82f1ac614c15b1f23c8bd1940911547e20b9603c"
+    },
+    "rail-delete": {
+      "edits": [
+        [
+          522,
+          "increment-ordinal",
+          3
+        ],
+        [
+          455,
+          "omit-record"
+        ]
+      ],
+      "sha256": "3d5d1890453ad3da01751a8c5358776d12f9f661ed80b9a4bea9b84feb72a62c"
+    }
+  },
+  "c0c924c17ce4418909de643c7cebbb253a93e200311d735322dfdcda388c75e6": {
+    "host-constant": {
+      "edits": [
+        [
+          92,
+          "prepend-test-constant"
+        ]
+      ],
+      "sha256": "1aab452a1dc7ffb35b262bb75e02f01ebfe698fdb3adf425a135521b6fd9a226"
+    },
+    "polarity-flip": {
+      "edits": [
+        [
+          282,
+          "toggle-constant",
+          1
+        ]
+      ],
+      "sha256": "d34ba2f3db9aa0582259e9d68773f679a6e7ebb809ad8ea355614d3cc935fab3"
+    },
+    "rail-delete": {
+      "edits": [
+        [
+          327,
+          "increment-ordinal",
+          3
+        ],
+        [
+          282,
+          "omit-record"
+        ]
+      ],
+      "sha256": "13386a1742536f7075a3f01a01f1473df40937743c719d47310603093f280bd9"
+    }
+  },
+  "db713f8b9ff59d4be47912211a070da9aa1718b8cf21facf4de059412a2f4333": {
+    "host-constant": {
+      "edits": [
+        [
+          240,
+          "prepend-test-constant"
+        ]
+      ],
+      "sha256": "6737aedf4d608222ceb563a625b525d02588c205c3ef36c9057d66a90dc4a32b"
+    },
+    "polarity-flip": {
+      "edits": [
+        [
+          595,
+          "toggle-constant",
+          1
+        ]
+      ],
+      "sha256": "e750ea3820275195c72997d36f96b28a2b8459d662115d04664b6ce75d057546"
+    },
+    "rail-delete": {
+      "edits": [
+        [
+          714,
+          "increment-ordinal",
+          3
+        ],
+        [
+          595,
+          "omit-record"
+        ]
+      ],
+      "sha256": "f9632339f55a085d2c63bb3034040ad9993e2defbe6732e12a6e9b6f7edf38b1"
+    }
+  },
+  "e5d92ca5e97e5f2a5e6373eea5dc0232885f50692185f7e91f4da47bb9896787": {
+    "host-constant": {
+      "edits": [
+        [
+          74,
+          "prepend-test-constant"
+        ]
+      ],
+      "sha256": "d6fc6cce2a27ed5f15b6e4c735d90e25880e27e903b51aed763473824577befb"
+    },
+    "polarity-flip": {
+      "edits": [
+        [
+          311,
+          "toggle-constant",
+          1
+        ]
+      ],
+      "sha256": "5dc423cd88e781eac5e01217de1937aaac7824f384de4fac52b86b11f86ec9a1"
+    },
+    "rail-delete": {
+      "edits": [
+        [
+          347,
+          "increment-ordinal",
+          3
+        ],
+        [
+          311,
+          "omit-record"
+        ]
+      ],
+      "sha256": "ebaa7a33ff338b4758f0b67d91c6f0100f716d275a94a4c7fe3e8ae66ae2a3c9"
+    }
+  },
+  "f0d10091941af56f775f91adec7ee4956e03d7d13b96c5ad0c525b61f5bfca95": {
+    "host-constant": {
+      "edits": [
+        [
+          84,
+          "prepend-test-constant"
+        ]
+      ],
+      "sha256": "b24a7706991a14ff766155a11411ea7c1b97c686a7c22080dcb424e71f931f77"
+    },
+    "polarity-flip": {
+      "edits": [
+        [
+          260,
+          "toggle-constant",
+          1
+        ]
+      ],
+      "sha256": "a803b3278a9436435e1660022fec77750e39a43b79989edf5d70174a5ffc83d9"
+    },
+    "rail-delete": {
+      "edits": [
+        [
+          301,
+          "increment-ordinal",
+          3
+        ],
+        [
+          260,
+          "omit-record"
+        ]
+      ],
+      "sha256": "8c98fe84b4cd971eb1b07592763d511667e15dbc6db527885da14735bc1f7db3"
+    }
+  },
+  "f3f1f6b3e56d762ba3cc44a21768b8ed44d1180398ed239dfddb3a122549ef1c": {
+    "host-constant": {
+      "edits": [
+        [
+          10,
+          "prepend-test-constant"
+        ]
+      ],
+      "sha256": "d07febb30e7dacf01676f97d4884bf741c9927b40b9dc867d7134d941e69be90"
+    },
+    "polarity-flip": {
+      "edits": [
+        [
+          15,
+          "toggle-constant",
+          1
+        ]
+      ],
+      "sha256": "13579ed348176bf6749e72bf16483b612306239ae494fc17f74e288885fec816"
+    },
+    "rail-delete": {
+      "edits": [
+        [
+          19,
+          "increment-ordinal",
+          3
+        ],
+        [
+          15,
+          "omit-record"
+        ]
+      ],
+      "sha256": "455b88a1895f3200c8431a5e5768e4adb257a8fdfb2f748eefe06f88e302c813"
+    }
+  }
+}

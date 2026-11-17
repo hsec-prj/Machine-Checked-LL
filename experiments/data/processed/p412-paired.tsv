@@ -1,0 +1,9 @@
+host	cone_pi	ksec_bits	path	translation_cec	paired_cec	negative_control	sld_status	sld_iters	sld_key	key_match	wall_s	peak_rss_kib_sampled	input_sha256
+c6288	32	32	certified	equivalent	equivalent	inequivalent	OK	109	10110010101100101011001010110010	Y	17.22	83084	eef818031d0c209bb434ed27618683fdba27e2c04b7568600075aa27b647b7c3
+c6288	32	32	splice	equivalent	equivalent	inequivalent	TIMEOUT	771	-	-	180.065	388808	fd6e774d129a8deedda1e82f8728a1330250f74cb61e20a95f6b87ea351378c5
+c1355	41	41	certified	equivalent	equivalent	inequivalent	OK	37	10110010101100101011001010110010101100101	Y	3.609	70260	950868a9f1c88664f40f4ba6525e3a11eeb1c26ab4c8d66f4054f66b4e2d5edf
+c1355	41	41	splice	equivalent	equivalent	inequivalent	OK	12	10110010101100101011001010110010101100101	Y	0.873	28292	4f60a854e9d8ed3bac24b1ddaf2b23d1fdf14e2958aeb5909a45b5e1ae67ddb4
+c5315	67	67	certified	equivalent	equivalent	inequivalent	TIMEOUT	325	-	-	180.119	830344	0c84243de41c02261d90e6b78acfeacd10662f73ad057006c7bed0e4a43aa316
+c5315	67	67	splice	equivalent	equivalent	inequivalent	OK	11	1011001010110010101100101011001010110010101100101011001010110010101	Y	1.999	73272	5b5cc74ef8b2b9acaeed17f437276631b596a1c19febef5ca4d9d164c6e9a616
+c7552	194	194	certified	equivalent	equivalent	inequivalent	TIMEOUT	71	-	-	180.197	2016392	f499dcb5c93cba55cdcd81a78390727349a83cc3f5051e02bbbbe89bd36417c8
+c7552	194	194	splice	equivalent	equivalent	inequivalent	TIMEOUT	109	-	-	180.192	2203984	ab2e0016eb15ea2bb92dbe0bd7dead1c06b8875c84faa68595737628917d27c9

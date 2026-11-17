@@ -1,0 +1,6 @@
+-- Acyclic source snapshot. Check Everything from this directory.
+-- graph/ is a separate library with overlapping module names.
+name: logic-locking-revision
+include: .
+depend: standard-library-2.3
+flags: --safe --without-K

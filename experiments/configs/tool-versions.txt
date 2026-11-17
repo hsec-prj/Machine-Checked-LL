@@ -1,0 +1,27 @@
+# E0 tool version pins — macOS x86_64 (Intel), updated 2026-08-16
+# For reproduction: install the same versions, follow REPRODUCE.md. Inspect installed versions with brew list --versions.
+# (Each fixture header records the yosys/abc/sld of its own run; this file pins the environment as a whole.)
+yosys 0.68            # bundles ABC 1.01 (yosys-abc, compiled Aug  5 2026)
+abc   1.01            # separate build ~/.local/bin/abc (compiled Aug 16 2026) — yosys-abc takes precedence
+OpenSTA 3.1.0         # standard-cell power (measure.sh power / sweep-measure.sh power), linked with CUDD
+icarus-verilog 13.0   # iverilog / vvp (E3 simulation)
+minisat 2.2.1         # SAT backend (E4)
+boost 1.92.0          # build dependency of the C++ SAT-attack program sld (E4)
+# E4 SAT-attack engine (built from source, ./build-sld.sh):
+sld    descyphy/Modified_SAT_Attack_on_Logic_Locking  # the Subramanyan attack as redistributed, native macOS build
+       sha256 49eda6719977976db20cf156e90cce7b3eb915ee50a146d1e49ffbf7ea7f798d
+       # sld reports no version → the sha256 of the binary is the pin (fixture_check.py uses it too).
+flex 2.6.4 / bison 2.3 (Apple CLT)                     # build dependency of sld (lexer/parser)
+
+# Added 2026-10-16 for the ISCAS-85 configured validation (scripts/run_configured*.py, configured_check.py). Observed on the authors' machine
+# (macOS x86_64) when the inputs were frozen and the records were written; each record also stores the strings it saw.
+agda  2.8.0                  # Agda version 2.8.0: proof checking and compilation of the extraction front end
+standard-library-2.3         # name in the registered .agda-lib that Agda resolved (REPRODUCE.md)
+ghc   9.10.3                 # The Glorious Glasgow Haskell Compilation System, version 9.10.3 (compiles the Agda output)
+python 3.14.8                # standard library only; every configured-validation script is run with python3 -B
+yosys-abc "UC Berkeley, ABC 1.01 (compiled Aug  5 2026 05:43:12)"   # /usr/local/bin/yosys-abc; the harness records this string in every row
+yosys 0.68+post              # git c12172fbae8af5e20f6fb52e3d4e92d56ed587b6, Release, AppleClang 16.0.0.16000026: a post-release build of the 0.68 line above
+Main  sha256 d4ece450818ad64c44264f0e4ba1283b800638c696ec92e6b4e9e24f78be7af7
+      # the extraction front end (experiments/extract/Main) compiled from this archive's sources with the toolchain above;
+      # the binary is not archived; every emit.json under experiments/data/raw/p53-iscas-configured/ records this sha256.
+      # A rebuild on another machine was not tested.

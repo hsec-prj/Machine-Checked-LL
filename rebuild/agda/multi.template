@@ -1,0 +1,35 @@
+{-# OPTIONS --safe --without-K #-}
+module Locking.CompileC17Multi where
+open import Data.Nat using (ℕ)
+open import Data.Bool using (Bool; true; false; not; _∧_)
+open import Data.Fin using (Fin; #_; toℕ)
+open import Data.Vec using (Vec; []; _∷_)
+open import Relation.Binary.PropositionalEquality using (_≡_; refl)
+open import Circuit.Core using (Circuit; And2; Not1; Seq)
+open import SFLL.HammingDistance using (HD; parity)
+open import Locking.CertifiedCompilerMulti using
+  (compileSFLLMulti; CompiledLockMulti; compileSFLLMultiSet; CompiledLockMultiSet)
+open import Locking.NetlistToCircuit using
+  (Gate; gate; Netlist; []; _∷_; importMulti; importMultiF; import-multi-correct)
+nandG : Circuit 2 1
+nandG = Seq And2 Not1
+
+$host
+
+c17nl2-is-c17 : (x : Vec Bool 5) → F2 x ≡ c17spec x
+c17nl2-is-c17 (x0 ∷ x1 ∷ x2 ∷ x3 ∷ x4 ∷ []) = refl
+ksec kapp : Vec Bool 5
+ksec = false ∷ false ∷ false ∷ false ∷ false ∷ []
+kapp = true  ∷ false ∷ false ∷ false ∷ false ∷ []
+odd : parity (HD ksec kapp) ≡ true
+odd = refl
+hF : Fin 6
+hF = # 2
+c17nl2-locked : CompiledLockMulti (# 0) (toℕ hF) ksec kapp F2
+c17nl2-locked =
+  compileSFLLMulti (importMulti c17nl2 outs) F2 (import-multi-correct c17nl2 outs)
+                   (# 0) hF ksec kapp odd
+c17nl2-set-locked : CompiledLockMultiSet (λ _ → true) (toℕ hF) ksec kapp F2
+c17nl2-set-locked =
+  compileSFLLMultiSet (importMulti c17nl2 outs) F2 (import-multi-correct c17nl2 outs)
+                      (λ _ → true) hF ksec kapp odd

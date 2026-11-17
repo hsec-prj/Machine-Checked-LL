@@ -1,0 +1,8 @@
+host	inputs	gates	benchmark	transform	regenerates
+c17	5	6	--	--	hand-written
+c432	36	132	c432.bench	none	exact
+c880	45	119	c880_lut2.bench	LUT2	exact
+c1355	41	100	c1355_lut2.bench	LUT2	exact
+c5315	67	187	c5315_lut2.bench	LUT2	exact
+c6288	32	633	c6288_lut2.bench	LUT2	exact
+c7552	194	523	c7552_lut2.bench	LUT2	exact

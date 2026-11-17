@@ -1,0 +1,185 @@
+[
+  {
+    "flat_sha256": "ae18c57742bbefe396273dddf1bda3be06cbd32e7b097d9a0ccdc55ae9f6ea73",
+    "host": "c6288",
+    "ordered_support_sha256": "572386ffc43db33f842b9199a3c1da36ed46101d1c8b31626bdb1e3fcee9c7aa",
+    "output": "N6123",
+    "routes": {
+      "certified": {
+        "final_bytes": 223297,
+        "fixed_key_signature": {
+          "ones": 535,
+          "outputs_sha256": "96b08262a922736d80a251a8d94564645b077acfb8b78a3acfdac4f19e0d4033",
+          "structure_sha256": "f0f823a973528c0c4e7543de2e71d16787887e5cef3cf97ccb2869bae37c3d8d",
+          "vectors": 1024
+        },
+        "input_sha256": "eef818031d0c209bb434ed27618683fdba27e2c04b7568600075aa27b647b7c3",
+        "prerequisite": {
+          "bytes": 221641,
+          "kind": "native_intermediate",
+          "sha256": "dddb4773d548be8d9f2f216ba6cc48d37bbdf85bd0037e873fd31ebdb4f29636"
+        }
+      },
+      "splice": {
+        "final_bytes": 226104,
+        "fixed_key_signature": {
+          "ones": 535,
+          "outputs_sha256": "96b08262a922736d80a251a8d94564645b077acfb8b78a3acfdac4f19e0d4033",
+          "structure_sha256": "fd52d7ad3014f3e9b8598cb63321f89761bf5e128970a3a20d91a36b20537871",
+          "vectors": 1024
+        },
+        "input_sha256": "fd6e774d129a8deedda1e82f8728a1330250f74cb61e20a95f6b87ea351378c5",
+        "prerequisite": {
+          "bytes": 91537,
+          "kind": "standalone_comparator",
+          "sha256": "3e3709f4ba7c33ccf88b5f23f416e9c0c3cb1d143f970689834fdc25c7c3323f"
+        }
+      }
+    },
+    "source_sha256": {
+      "correspondence": "acaa8826c10d4ca34f52851e63fb76cd5939fbb938eb8ee285cf82a1423bb0f3",
+      "literal_bench": "5480d9ec0fd2cb195dfca37550e2da99ae24d39bd422fa8e8f40ff3ab801b571",
+      "normalized_bench": "99e2a151506bdadaa88dd027ef05531684a1a672a934a30f9c9dd3db7d9340d5",
+      "portmap": "9c3075d59b3a731a89c2371a2a7b17591ffd428f564a9e0c71d83b4c55109900"
+    },
+    "width": 32
+  },
+  {
+    "flat_sha256": "e4e4dba0db89501cff482f8900d12700224e5e92ff25e6e4cb75a929003c3ff0",
+    "host": "c1355",
+    "ordered_support_sha256": "65d257472931bce8aae39c82a3344602f01bc25119c929f8d3f601f289fbbeb6",
+    "output": "G1324",
+    "routes": {
+      "certified": {
+        "final_bytes": 334792,
+        "fixed_key_signature": {
+          "ones": 521,
+          "outputs_sha256": "ba7f051cd39bd3a9ae5b5bed77d807571f9cc9dda0b287531df490b79135f7cc",
+          "structure_sha256": "aa4ab922794a9cff7b759630aea582e8fdc49c679eb9b18167bb563d1f1500d5",
+          "vectors": 1024
+        },
+        "input_sha256": "950868a9f1c88664f40f4ba6525e3a11eeb1c26ab4c8d66f4054f66b4e2d5edf",
+        "prerequisite": {
+          "bytes": 333238,
+          "kind": "native_intermediate",
+          "sha256": "b9116d977f89cd0d321194640ef08b0706737dfe803c2b0e24a79440a8a669b8"
+        }
+      },
+      "splice": {
+        "final_bytes": 255812,
+        "fixed_key_signature": {
+          "ones": 521,
+          "outputs_sha256": "ba7f051cd39bd3a9ae5b5bed77d807571f9cc9dda0b287531df490b79135f7cc",
+          "structure_sha256": "379ad02eec339606ac987f6c553a2ad8ce5c4f67b5eb76156bb731b675b0aa4f",
+          "vectors": 1024
+        },
+        "input_sha256": "4f60a854e9d8ed3bac24b1ddaf2b23d1fdf14e2958aeb5909a45b5e1ae67ddb4",
+        "prerequisite": {
+          "bytes": 151884,
+          "kind": "standalone_comparator",
+          "sha256": "91d44df068d3aa2f81f104408cb3a5f2a7fe7f3d213949b00994e2b3f30d982c"
+        }
+      }
+    },
+    "source_sha256": {
+      "correspondence": "e8f0100e20be88878ffd36ed4515d2c364b0cf37ec5aaa19f67cd65177270714",
+      "independent_bench": "910e714f3b04d5a70a361f41cf5f3373c8e6ee950726fea7ba486c3f1418100c",
+      "literal_bench": "2851701d8f88683d0682ef0dfa3a1ecbd4dcbb5fa5594010404e1024aa011525",
+      "normalized_bench": "ba9f03373d39b5021472fd7101f0f375dd9869265ae63950af21df394fc30e72",
+      "portmap": "d5d59b5cd4271385ae390abee1316c457dc307960ead430276e77a844215d357"
+    },
+    "width": 41
+  },
+  {
+    "flat_sha256": "448cf5cfc4402c2028332242a095b604d225665267b4c416413b18d253672687",
+    "host": "c5315",
+    "ordered_support_sha256": "651c463003937236ca977a30ab90b83bf861742f2b43f25d7702b85d5d27326e",
+    "output": "N7757",
+    "routes": {
+      "certified": {
+        "final_bytes": 936488,
+        "fixed_key_signature": {
+          "ones": 235,
+          "outputs_sha256": "0868275e65b88048878b487973c644dc5d016e9f83e5d352dd24431f81504c8a",
+          "structure_sha256": "f365f6a4efe9b5d917d41c0d34885289c79c2abdd6c79ac5c9423aa9a5fad4d6",
+          "vectors": 1024
+        },
+        "input_sha256": "0c84243de41c02261d90e6b78acfeacd10662f73ad057006c7bed0e4a43aa316",
+        "prerequisite": {
+          "bytes": 932231,
+          "kind": "native_intermediate",
+          "sha256": "56f38d526967b74c7211c18e99ae8ecbf013c26d45e6384e59bc276ba254e4b6"
+        }
+      },
+      "splice": {
+        "final_bytes": 674024,
+        "fixed_key_signature": {
+          "ones": 235,
+          "outputs_sha256": "0868275e65b88048878b487973c644dc5d016e9f83e5d352dd24431f81504c8a",
+          "structure_sha256": "2fec87d0205546a27f58ff4a9fa7c60874ad8727711ccd8eafdd0450edcb187d",
+          "vectors": 1024
+        },
+        "input_sha256": "5b5cc74ef8b2b9acaeed17f437276631b596a1c19febef5ca4d9d164c6e9a616",
+        "prerequisite": {
+          "bytes": 427845,
+          "kind": "standalone_comparator",
+          "sha256": "1d6c756c7e918972d365462854860e3fb1ab9c197565318521f5f5487ae3e639"
+        }
+      }
+    },
+    "source_sha256": {
+      "correspondence": "c824838caf64c05bff9248401b8384973e28857dd8428c5000dd250e228b86e5",
+      "independent_bench": "976295c01830c71c0c9d0f65b3380f4558c5d6f47d3d6a49eb98f7b6328cc754",
+      "literal_bench": "a93a258c14933335c0bb60a09e9c3f8413bce6cb97bfd621bb07ca134c1c2981",
+      "normalized_bench": "08a36ae6f5503562bb93fec8e2a048c3e955a63cb1067cda9df0dad7c563887e",
+      "portmap": "851ca1d32eab35f87e9d1a8b0094686d935612b197228b5db0c332d094d9dc7d"
+    },
+    "width": 67
+  },
+  {
+    "flat_sha256": "cf76949d2f6bcb0a99eac92d901b7132563eae56265c6abea6939ddbd3d7b1ca",
+    "host": "c7552",
+    "ordered_support_sha256": "2b208fd2a214af24094d83b583d056536ac40044ed09aaa65053d05bf32aa9a7",
+    "output": "N10729",
+    "routes": {
+      "certified": {
+        "final_bytes": 8534999,
+        "fixed_key_signature": {
+          "ones": 1024,
+          "outputs_sha256": "e9175db65a9789096ca9cb5524d3abc2107df03e3c9ba3af1aca628f9c5d3bd2",
+          "structure_sha256": "08dfc69574b29808ccb7722b5bdded660746bce0ae4993a6ede32b15681ea6d5",
+          "vectors": 1024
+        },
+        "input_sha256": "f499dcb5c93cba55cdcd81a78390727349a83cc3f5051e02bbbbe89bd36417c8",
+        "prerequisite": {
+          "bytes": 8527266,
+          "kind": "native_intermediate",
+          "sha256": "0f33786dd42d2db412981d71c5721c8bb7d40be0a8adace494ea6d511836638a"
+        }
+      },
+      "splice": {
+        "final_bytes": 5899830,
+        "fixed_key_signature": {
+          "ones": 1024,
+          "outputs_sha256": "e9175db65a9789096ca9cb5524d3abc2107df03e3c9ba3af1aca628f9c5d3bd2",
+          "structure_sha256": "03fa107beac26d9507b5bc4a1b814772ae24e6d8a81f988d0049c00a213bca8a",
+          "vectors": 1024
+        },
+        "input_sha256": "ab2e0016eb15ea2bb92dbe0bd7dead1c06b8875c84faa68595737628917d27c9",
+        "prerequisite": {
+          "bytes": 3924885,
+          "kind": "standalone_comparator",
+          "sha256": "4db58a67d3fd02583d768b47112cb55fe8e0fa94d93574c9a35e898c9cdf076a"
+        }
+      }
+    },
+    "source_sha256": {
+      "correspondence": "8df58860909554a3e424a1c5c3ec011792e729789fe0a49f68d11000cc32fe89",
+      "independent_bench": "1410ccff14bf5e38fb4ea825007525dcd4c0a97562423a4abeb73472c006379b",
+      "literal_bench": "f094c26c0d43b1a0c60f9c4477b2a21fb64af078435b8fa9f81eecba3119a772",
+      "normalized_bench": "3b86a7af9d984dcaab9d8aaca73b9cebb3dac43db02ccd9090a684eecbc58d2f",
+      "portmap": "df82ec8f1f28204517b4b1bf7ebbce5310058bb0977f773b722835d70165ce1b"
+    },
+    "width": 194
+  }
+]

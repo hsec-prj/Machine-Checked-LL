@@ -1,0 +1,2 @@
+config	call	attempt_dir	counted	host	out	n	h	status	verdict	result	harness_sha256	dut_sha256
+B.c6288.N6123	bridge	p53-iscas-configured/c6288/N6123/bridge	yes	c6288	N6123	32	NA	PASS	PASS	mismatches=0;cone_vs_intprod=0;golden_vs_intprod=0;intprod_neg_bit=14;intprod_neg_mismatches=2147450880;lut_expansion_cec=EQ	bcec9d3a1be233deb46c48a986c5f2a19a1531bfaad1338a0295e162c4bb6472	
